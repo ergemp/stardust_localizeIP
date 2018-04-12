@@ -144,7 +144,11 @@ public class Stardust_localizeIP {
                 {
                 }
             }   
-                        
+             
+            //then sleep for one sec.
+            //CDN Service has this limit one request per second
+            Thread.sleep(1000);
+            
             retVal = true;
         }
         catch(Exception ex)
@@ -215,11 +219,10 @@ public class Stardust_localizeIP {
         {
             retVal = false; 
             ex.printStackTrace();
-            //System.out.println(ex.getMessage());
         }
         finally
         {
-            return retVal;
+            return retVal;            
         }
         
     }
