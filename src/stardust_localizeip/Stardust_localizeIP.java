@@ -39,8 +39,7 @@ public class Stardust_localizeIP {
     }
         
     public static Boolean getLocalFromDB(String gIPADDR)
-    {
-    
+    {   
         Boolean retVal = false;        
         sIPADDR = gIPADDR;         
         
